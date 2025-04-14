@@ -6,6 +6,7 @@
     font-family: "Lemon", serif;
     -webkit-text-stroke: #000 .5px;
 
+
 }
 .lemon-regular {
     font-family: "Lemon", serif;
@@ -14,6 +15,7 @@
   }
 html{
     height: 100vh;
+    overflow-x: hidden;
 }
 
 H2{
@@ -121,20 +123,18 @@ nav a:active{
 
 /*          CONTENIDO                   */
 
-article{
+article {
     margin-left: 28px;
     width: 95%;
-    height: 400px;
+    height: max-content;
     border-radius: 20px;
     overflow: hidden;
 }
 .mainBackgroundImg{
-    background-image: url("../resource/imgBody.jpg");
-    background-position: bottom;
     width: 100%;
-    height: 100%;
-    background-size: cover;
-    position: relative;
+    height: 0;
+    position: absolute;
+    top: 100%;
     text-align: center;
     align-content: center;
 }
@@ -144,6 +144,9 @@ article{
     border-radius: 15px;
     width: max-content;
     justify-self: center;
+    position: absolute;
+    top: -130%;
+    left: 20%;
 }
 .searchInput {
     padding: 11px 17px;
@@ -167,6 +170,27 @@ article{
     font-weight: 500;
     font-size: 15px;
     color: #444;
+}
+
+/* ARTICLE DE LA PAGINA "MyReservation" */
+.btnSignUp{
+    background-color: #1668E3;
+    color: #fff;
+    width: 50%;
+    -webkit-text-stroke: 0;
+    justify-self: center !important;
+    display: block;
+    margin-bottom: 7rem;
+}
+.tittleNotSesion {
+    color: #0E1A37;
+    -webkit-text-stroke: 0;
+}
+.imgNotSesion {
+    display: block;
+    width: 30%;
+    justify-self: center;
+    position: relative;
 }
 
 /*            ASIDE         */
